@@ -6,13 +6,12 @@
 
 template<typename T1, typename T2>
 void ploduino_plot(T1 label, T2 val) {
-    Serial.print(label); Serial.print(":"); Serial.print(val); Serial.print("\t");
+    Serial.print(label); Serial.print(":"); Serial.print(val); Serial.print("\t"); Serial.println("");
 }
 
 template<typename T1, typename T2, typename... Args>
 void ploduino_plot(T1 label, T2 val, Args... args) {
     Serial.print(label); Serial.print(":"); Serial.print(val); Serial.print("\t"); ploduino_plot(args...);
-    Serial.println("");
 }
 
 #endif
