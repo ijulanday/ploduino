@@ -11,5 +11,5 @@ An easy way of using the ArudinoIDE Serial Plotter
 ploduino_plot("Voltage", escData.voltage * .1
       , "Current", escData.current * .1
       , "Throttle", pwmData.throttlePercent * 100
-      , "Meme", 50);
+      );
 ```
